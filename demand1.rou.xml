@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="https://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vType id="car" accel="1.0" decel="3.0" length="4.0" maxSpeed="13.89" 
+           lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="1.0" lcKeepRight="0.0"/>
+    
+    
+    <route id="east_bound" edges="E0 E1"/>
+    <route id="west" edges="E2 E3 E1"/>
+
+
+    <vTypeDistribution id="car_colors">
+                <vType id="car_red" accel="1.0" decel="3.0" length="4" maxSpeed="55.55" color="1,0,0" probability="0.4"/>   <!-- 40% Red -->
+                <vType id="car_blue" accel="1.0" decel="3.0" length="4" maxSpeed="55.55" color="0,0,1" probability="0.3"/>  <!-- 30% Blue -->
+                <vType id="car_green" accel="1.0" decel="3.0" length="4" maxSpeed="55.55" color="0,1,0" probability="0.3"/> <!-- 30% Green -->
+                <vType id="bus" accel="0.8" decel="2.0" length="12" maxSpeed="25" vClass="bus" probability="0.2" color="1,0.5,0"/> <!-- Orange Bus -->
+                <vType id="taxi" accel="1.5" decel="4.0" length="5" maxSpeed="50" color="1,0.75,0.8" vClass="passenger" probability="0.2"/> <!-- Yellow Taxi -->
+                <vType id="moped" accel="1.2" decel="2.5" length="2.5" maxSpeed="25" color="0,0,1" vClass="motorcycle" probability="0.2"/> <!-- Blue Moped -->
+                <vType id="truck" accel="0.8" decel="2.5" length="12" maxSpeed="40" color="0.5,0.5,0.5" vClass="truck" probability="0.2"/> <!-- Gray Truck -->
+
+    </vTypeDistribution>
+
+
+    <!-- Flow with Multiple Colors -->
+    <flow id="car_flow" begin="10" end="150" number="150" route="east_bound" type="car_colors" departLane="random"/>
+    <flow id="car_flow2" begin="10" end="150" number="150" route="west" type="car_colors" />
+
+
+</routes>
