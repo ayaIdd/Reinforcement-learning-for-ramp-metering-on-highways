@@ -62,13 +62,12 @@
     <edge id="E2" from="J3" to="J4" priority="-1">
         <lane id="E2_0" index="0" speed="13.89" length="48.31" shape="-59.17,-31.79 -15.48,-11.18"/>
     </edge>
-    <edge id="E3" from="J4" to="J1" priority="-1" length="6.00">
+    <edge id="E3" from="J4" to="J1" priority="-1" >
         <lane id="E3_0" index="0" speed="13.89" length="6.00" shape="-14.84,-10.64 -12.85,-7.74"/>
     </edge>
 
     <tlLogic id="J4" type="static" programID="0" offset="0">
         <phase duration="82" state="G"/>
-        <phase duration="3"  state="y"/>
         <phase duration="5"  state="r"/>
     </tlLogic>
 
