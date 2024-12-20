@@ -8,7 +8,7 @@ xsi:noNamespaceSchemaLocation="https://sumo.dlr.de/xsd/routes_file.xsd">
     
     
     <route id="east_bound" edges="E0 E1"/>
-    <route id="west" edges="E2 E3 E1"/>
+    <route id="west" edges="E5 E4 E1"/>
 
 
     <vTypeDistribution id="car_colors">
@@ -25,7 +25,7 @@ xsi:noNamespaceSchemaLocation="https://sumo.dlr.de/xsd/routes_file.xsd">
 
     <!-- Flow with Multiple Colors -->
     <flow id="car_flow" begin="10" end="150" number="150" route="east_bound" type="car_colors" departLane="random"/>
-    <flow id="car_flow2" begin="10" end="150" number="150" route="west" type="car_colors" />
+    <flow id="car_flow2" begin="10" end="150" number="5" route="west" type="car_colors" />
 
 
 </routes>

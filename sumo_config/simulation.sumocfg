@@ -7,8 +7,9 @@
 
     <input>
         <net-file value="wee1.net.xml"/>
+        <!-- <net-file value="wee1_no_trafficLIght.net.xml"/> -->
         <route-files value="demand1.rou.xml"/>
-        <!-- <additional-files value="test.add.xml"/> -->
+        <!-- <additional-files value="tls.xml"/> -->
     </input>
 
 </sumoConfiguration>
