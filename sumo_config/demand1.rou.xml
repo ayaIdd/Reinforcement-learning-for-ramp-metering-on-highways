@@ -20,6 +20,6 @@ xsi:noNamespaceSchemaLocation="https://sumo.dlr.de/xsd/routes_file.xsd">
     </vTypeDistribution>
 
     <!-- Corrected Flows -->
-    <flow id="car_flow" begin="0" end="500" number="100" route="east_bound" type="car_colors" departLane="random" />
-    <flow id="car_flow2" begin="0" end="500" number="30" route="west" type="car_colors" departLane="random" />
+    <flow id="car_flow" begin="0" end="500" number="300" route="east_bound" type="car_colors" departLane="random" />
+    <flow id="car_flow2" begin="0" end="500" number="20" route="west" type="car_colors" departLane="random" />
 </routes>
