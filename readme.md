@@ -19,12 +19,13 @@ This project applies **Reinforcement Learning (RL)** algorithms—**Q-learning**
 - `testing_Q-learning.ipynb`: Testing Q-learning traffic control.
 - `testing_DQL.ipynb`: Testing Deep Q-learning traffic control.
 ## How to Run the Model
-1. **Run the Jupyter Notebooks**:
+1. **Install libraries listed in the requirements file**: pip install -r requirements.txt
+2. **Run the Jupyter Notebooks**:
    - Run `Q_learning.ipynb` to train and test the Q-learning model.
    - Run `DQ_learning.ipynb` to train and test the Deep Q-learning model.
    - Test the baseline scenario using `testing_NoTrafficLight.ipynb`.
 
-2. You can test all models by running the testing notebooks: `testing_Q-learning.ipynb` and `testing_DQL.ipynb`.
+3. You can test all models by running the testing notebooks: `testing_Q-learning.ipynb` and `testing_DQL.ipynb`.
 
 ## Future Work
 
